@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Mahasiswa</title>
+    <link rel="stylesheet" href="profil.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Profil Mahasiswa</h1>
+      <p style="text-align: center">Universitas 'Aisyiyah Yogyakarta</p>
+      <div class="profile">
+        <div class="profile-image">
+          <div class="image-container">
+            <img id="profile-pic" src="Foto.jpg" alt="Foto Profil" />
+            <label for="profile-pic-input" class="change-photo-icon">
+              <i class="fas fa-camera"></i>
+            </label>
+          </div>
+          <input
+            type="file"
+            id="profile-pic-input"
+            accept="image/*"
+            style="display: none"
+          />
+          <h2>Hilman Satia Pebrian</h2>
+          <p>NIM : 2311501002</p>
+          <p>Kelas : A1</p>
+          <p>Hobby : GYM</p>
+        </div>
+        <div class="profile-info">
+          <div class="info-box">
+            <h2>Informasi</h2>
+            <table>
+              <tr>
+                <td>Prodi</td>
+                <td>Teknologi Informasi</td>
+              </tr>
+              <tr>
+                <td>Tahun Akademik</td>
+                <td>2024-2025</td>
+              </tr>
+              <tr>
+                <td>Jenis Kelamin</td>
+                <td>Pria</td>
+              </tr>
+              <tr>
+                <td>Agama</td>
+                <td>OPSIONAL</td>
+              </tr>
+              <tr>
+                <td>Golongan Darah</td>
+                <td>O</td>
+              </tr>
+            </table>
+          </div>
+          <div class="info-box">
+            <h2>Informasi lainnya</h2>
+            <p>
+              Mahasiswa ini sangat suka mengerjakan tugas dan sangat rajin
+              walaupun kadang"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("profile-pic-input")
+        .addEventListener("change", function (e) {
+          var file = e.target.files[0];
+          var reader = new FileReader();
+          reader.onload = function (event) {
+            document.getElementById("profile-pic").src = event.target.result;
+          };
+          reader.readAsDataURL(file);
+        });
+    </script>
+  </body>
+</html>
