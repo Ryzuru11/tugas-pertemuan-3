@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bonita AI Team Management</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Explore AI Team Management Insights</h1>
+      </header>
+      <main>
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Enter a search term or topic"
+          />
+          <button id="searchButton">Search</button>
+        </div>
+        <div class="examples">
+          <p>Or start with an example:</p>
+          <div class="tags">
+            <span class="tag">Team Efficiency</span>
+            <span class="tag">Task Management</span>
+            <span class="tag">Performance Analytics</span>
+            <span class="tag">Resource Allocation</span>
+          </div>
+        </div>
+        <div class="insights">
+          <div class="insight-card">
+            <h3>Team Performance</h3>
+            <div id="performanceChart" class="chart"></div>
+            <p>Insights by department, Past 7 days, United States</p>
+          </div>
+          <div class="insight-card">
+            <h3>Global Productivity</h3>
+            <div id="globalChart" class="chart"></div>
+            <p>Insights by region, Past 7 days, Worldwide</p>
+          </div>
+          <div class="insight-card">
+            <h3>Resource Utilization</h3>
+            <div id="resourceChart" class="chart"></div>
+            <p>Insights by project, 2024 - present, United States</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="home.js"></script>
+  </body>
+</html>
