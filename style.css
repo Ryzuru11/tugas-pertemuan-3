@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  background-color: #f5f5f5;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: white;
+  padding: 20px;
+  height: 100vh;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.menu-item {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.upgrade-btn {
+  background-color: #4a4af4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dashboard-item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.efficiency-card {
+  background-color: #e6e6fa;
+}
+
+.chart-container {
+  height: 200px;
+}
+
+.team-members {
+  display: flex;
+  align-items: center;
+}
+
+.team-member {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin-right: -10px;
+}
+
+.add-member {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #4a4af4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.departments {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.department-card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.profile-link {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #4a4af4;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
